@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBlobAzure.Views.ImageBrowserPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Image File Browser"
+                FontAttributes="Bold" 
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="btnGetImgFileList"
+                Text="Get File List SDK11"
+                Clicked="btnGetImgFileList_Clicked" />
+            <Button
+                x:Name="btnGetImgFileListSDK12"
+                Text="Get File List SDK12"
+                Clicked="btnGetImgFileListSDK12_Clicked" />
+            <ListView
+                x:Name="lstViwFiles"
+                ItemSelected="lstViwFiles_ItemSelected"/>
+            <Image
+                x:Name="DwnImg"
+                HeightRequest="150"/>
+            <Button
+                x:Name="btnDelete"
+                Text="Delete SDK11"
+                IsEnabled="false"
+                Clicked="btnDelete_Clicked"/>
+            <Button
+                x:Name="btnDeleteSDK12"
+                Text="Delete SDK12"
+                IsEnabled="false"
+                Clicked="btnDeleteSDK12_Clicked"/>
+            <Label
+                x:Name="lblMessage"
+                HorizontalTextAlignment="Center"
+                TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

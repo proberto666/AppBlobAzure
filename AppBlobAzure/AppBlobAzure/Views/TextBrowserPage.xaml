@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBlobAzure.Views.TextBrowserPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Text File Browser"
+                FontAttributes="Bold" 
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="btnGetTxtFileList"
+                Text="Get File List SDK11"
+                Clicked="btnGetTxtFileList_Clicked" />
+            <Button
+                x:Name="btnGetTxtFileListSDK12"
+                Text="Get File List SDK12"
+                Clicked="btnGetTxtFileListSDK12_Clicked"/>
+            <ListView
+                x:Name="lstViwFiles"
+                ItemSelected="lstViwFiles_ItemSelected"/>
+            <Editor
+                x:Name="editorTxt"
+                HeightRequest="100"
+                IsEnabled="False"/>
+            <Button
+                x:Name="btnDelete"
+                Text="Delete"
+                IsEnabled="false"
+                Clicked="btnDelete_Clicked"/>
+            <Button
+                x:Name="btnDeleteSDK12"
+                Text="Delete SDK12"
+                IsEnabled="false"
+                Clicked="btnDeleteSDK12_Clicked"/>
+            <Label
+                x:Name="lblMessage"
+                HorizontalTextAlignment="Center"
+                TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
