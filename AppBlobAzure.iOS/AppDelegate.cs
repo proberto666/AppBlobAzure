@@ -14,6 +14,7 @@ namespace AppBlobAzure.iOS
             Xamarin.Forms.Forms.Init();
 
             LoadApplication(new App());
+            UIApplication.SharedApplication.StatusBarHidden = true;
 
             return base.FinishedLaunching(application, launchOptions);
         }

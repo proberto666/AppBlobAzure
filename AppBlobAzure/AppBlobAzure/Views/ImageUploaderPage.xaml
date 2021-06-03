@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBlobAzure.Views.ImageUploaderPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20,35,20,20">
             <Label 
                 Text="Upload Image"
                 FontAttributes="Bold"

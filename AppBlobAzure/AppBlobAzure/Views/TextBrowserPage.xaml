@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBlobAzure.Views.TextBrowserPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20,35,20,20">
             <Label Text="Text File Browser"
                 FontAttributes="Bold" 
                 HorizontalOptions="Center" />
@@ -24,7 +24,7 @@
                 IsEnabled="False"/>
             <Button
                 x:Name="btnDelete"
-                Text="Delete"
+                Text="Delete SDK11"
                 IsEnabled="false"
                 Clicked="btnDelete_Clicked"/>
             <Button
